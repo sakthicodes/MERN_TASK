@@ -1,0 +1,9 @@
+{
+    "rewrites": [
+      {
+        "source": "/api/:path*",
+        "destination": "https://taskbeapi.vercel.app/api/:path*"
+      }
+    ]
+  }
+  
