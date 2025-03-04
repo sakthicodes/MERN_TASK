@@ -14,10 +14,12 @@ const PORT = process.env.PORT || 5000;
 app.use(express.json());
  
 const corsOptions = {
-  origin: "https://mern-task-vercel.vercel.app/",
+  origin: "https://mern-task-vercel.app",
   methods: "GET,POST,PUT,DELETE",
-  credentials: true, 
+  allowedHeaders: "Content-Type,Authorization",
+  credentials: true,
 };
+
 
 app.use(cors(corsOptions));
 app.use("/api/auth", authRoutes);
